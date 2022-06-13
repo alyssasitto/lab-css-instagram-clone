@@ -4,7 +4,130 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 100vh;
+	font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: linear-gradient(
+		#3c6589 0%,
+		#3c6589 40%,
+		white 40%,
+		white 100%
+	);
+	padding-bottom: 4rem;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+
+.main-content {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	max-width: 43rem;
+}
+
+.content-container {
+	background-image: url(/images/frame.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* padding: 3rem; */
+	padding-top: 3rem;
+	padding-left: 3rem;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.button-container img {
+	position: absolute;
+}
+
+button {
+	display: flex;
+	align-items: flex-end;
+	padding: 0.8rem;
+	margin-right: 1rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	gap: 1rem;
+	color: #fff;
+	background-image: linear-gradient(#508bc3, #355774);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 0px 6px 2px #2e4c67;
+}
+
+h1 {
+	color: #06365f;
+	font-size: 2.1rem;
+	line-height: 1.2;
+	margin-bottom: 1.5rem;
+}
+
+h1 span {
+	display: block;
+}
+
+.content-container p {
+	font-size: 1.1rem;
+	padding-right: 4rem;
+}
+
+.helper {
+	margin-bottom: 1rem;
+}
+
+.helper-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.help {
+	margin-bottom: 2rem;
+}
+
+.badges {
+	display: flex;
+	gap: 1.5rem;
+}
+
+footer {
+	text-align: center;
+	display: flex;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+}
+
+footer span {
+	margin-left: 2.5rem;
+	color: #989797;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #3c6589;
 }
